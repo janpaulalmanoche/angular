@@ -25,7 +25,7 @@ export const products = [
     description: ''
   },
   {
-    id: 1,
+    id: 4,
     name: 'Samsung Galaxy 9',
     price: 999,
     description: 'A large phone with one of the best screens'
