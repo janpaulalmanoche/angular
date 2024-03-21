@@ -9,7 +9,16 @@
   <p *ngIf="product.description">Description: {{ product.description }}</p>
 
   <button type="button" (click)="share()">Share</button>
-  <button type="button" (click)="sayHi()"  style="margin-left:2px">
+  <!-- <button type="button" (click)="sayHi()"  style="margin-left:2px">
     Hi
-  </button>
+  </button> -->
+
+  <!-- sample of passing data to a component child and passing data also to parent samples -->
+  <!-- notify is from the product-alert , and onNotify is on product list, the function to be called back -->
+  <app-product-alerts
+  [product]="product"
+  (notify)="onNotify()">
+  >
+</app-product-alerts>
+
 </div>
