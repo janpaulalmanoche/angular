@@ -16,8 +16,8 @@ export class ProductListComponent {
   sayHi() {
     alert('hi');
   }
-  onNotify() {
-    window.alert('You will be notified when the product goes on sale');
+  onNotify(price:number) {
+    window.alert(`You will be notified when the product goes on sale ${price}` );
   }
 }
 

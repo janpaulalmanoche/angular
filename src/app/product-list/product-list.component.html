@@ -17,7 +17,7 @@
   <!-- notify is from the product-alert , and onNotify is on product list, the function to be called back -->
   <app-product-alerts
   [product]="product"
-  (notify)="onNotify()">
+  (notify)="onNotify($event)">
   >
 </app-product-alerts>
 
